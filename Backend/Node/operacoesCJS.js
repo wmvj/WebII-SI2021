@@ -1,23 +1,23 @@
-// // primeira opção
+// primeira opção
 
-exports.soma = function (num1, num2){
-    return num1 + num2
-}
+// exports.soma = function (num1, num2){
+//     return num1 + num2
+// }
 
-exports.multiplicar = function (num1, num2){
-    return num1 * num2
-}
+// exports.multiplicar = function (num1, num2){
+//     return num1 * num2
+// }
 
 // // segunda opção
 
-// module.exports = {
-//     soma(num1, num2){
-//         return num1 + num2
-//     },
-//     multiplicar(num1, num2){
-//         return num1 * num2
-//     }
-// }
+module.exports = {
+    soma(num1, num2){
+        return num1 + num2
+    },
+    multiplicar(num1, num2){
+        return num1 * num2
+    }
+}
 
 // terceira opção
 
