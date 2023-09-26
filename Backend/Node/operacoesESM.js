@@ -10,15 +10,15 @@
 
 // segunda opcao
 
-// function soma(num1, num2) {
-//     return num1 + num2
-// }
+function soma(num1, num2) {
+    return num1 + num2
+}
 
-// function multiplica(num1, num2) {
-//     return num1 * num2
-// }
+function multiplica(num1, num2) {
+    return num1 * num2
+}
 
-// export {soma, multiplica}
+export {soma, multiplica}
 
 // terceira opcao
 
