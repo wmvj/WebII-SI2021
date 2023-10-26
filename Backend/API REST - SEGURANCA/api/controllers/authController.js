@@ -1,3 +1,6 @@
+const AuthService = require('../services/authService.js')
+const authService = new AuthService
+
 class AuthController{
     static async login(req, res){
         const {email, senha} = req.body
