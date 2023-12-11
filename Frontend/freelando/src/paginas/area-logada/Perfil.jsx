@@ -8,6 +8,8 @@ import avatar from './assets/avatar.png'
 import { CampoTexto } from "../../componentes/CampoTexto/CampoTexto";
 import { Botao } from "../../componentes/Botao/Botao";
 import { ArmazenadorToken } from "../../utils/ArmazenadorToken";
+import { useEffect } from "react";
+import http from "../../http";
 
 const TituloEstilizado = styled.h1`
     background: url(${background}) no-repeat;
@@ -25,6 +27,13 @@ const ImgEstilizada = styled.img`
 `
 
 const Perfil = () => {
+
+    useEffect(() => {
+        http.get('profile')
+            .then(resposta => console.log(resposta.data))
+            .catch(erro => console.log(erro))
+    }, [])
+
 
     const aoSubmeterForm = (evento) => {
         evento.preventDefault()
