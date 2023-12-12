@@ -11,6 +11,7 @@ import { ItemListaInline } from "../componentes/Lista/ItemListaInline"
 import { ListaInline } from "../componentes/Lista/ListaInline"
 import { Rodape } from "../componentes/Rodape/Rodape"
 import { Tipografia } from "../componentes/Tipografia/Tipografia"
+import { ArmazenadorToken } from "../utils/ArmazenadorToken"
 
 const LayoutBase = ({children}) => {
     return (
@@ -23,6 +24,11 @@ const LayoutBase = ({children}) => {
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <Link>Login</Link>
+                        </Col>
+                        <Col style={{ textAlign: 'right' }}>
+                            <Link onClick={() => ArmazenadorToken.efetuarLogout()}>
+                                Logout
+                            </Link>
                         </Col>
                     </Row>
                 </Container>
