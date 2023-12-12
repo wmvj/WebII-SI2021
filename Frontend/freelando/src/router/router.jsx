@@ -10,7 +10,6 @@ import Pagina404 from "../paginas/erros/Pagina404";
 import Login from "../paginas/Login/Login";
 import Perfil from "../paginas/area-logada/Perfil";
 
-
 export const router = createBrowserRouter([
     {
         path: "/",

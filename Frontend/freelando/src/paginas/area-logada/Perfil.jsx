@@ -7,9 +7,9 @@ import background from './assets/perfil-bg.png'
 import avatar from './assets/avatar.png'
 import { CampoTexto } from "../../componentes/CampoTexto/CampoTexto";
 import { Botao } from "../../componentes/Botao/Botao";
-import { ArmazenadorToken } from "../../utils/ArmazenadorToken";
 import { useEffect } from "react";
 import http from "../../http";
+import { ArmazenadorToken } from "../../utils/ArmazenadorToken";
 
 const TituloEstilizado = styled.h1`
     background: url(${background}) no-repeat;
@@ -31,9 +31,8 @@ const Perfil = () => {
     useEffect(() => {
         http.get('profile')
             .then(resposta => console.log(resposta.data))
-            .catch(erro => console.log(erro))
+            .catch(erro => console.error(erro))
     }, [])
-
 
     const aoSubmeterForm = (evento) => {
         evento.preventDefault()

@@ -10,7 +10,7 @@ const estilos = tema => {
         },
         a: {
             textDecoration: 'none'
-        }    
+        }
     }
 }
 
