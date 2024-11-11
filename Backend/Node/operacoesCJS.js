@@ -1,3 +1,10 @@
+// O objeto global exports é sempre definido internamente pelo Node.js.
+
+// Assim, quando queremos exportar vários módulos, atribuímos estes módulos 
+//como propriedades do objeto exports.
+
+
+
 // primeira opção
 
 // exports.soma = function (num1, num2){
